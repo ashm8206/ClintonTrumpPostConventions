@@ -12,15 +12,15 @@ Setup
     Sign up for a Twitter developer account.
     Create an application here.
     Set the following keys in private.py. You can get these values from the app you created:
-        TWITTER_KEY
-        TWITTER_SECRET
-        TWITTER_APP_KEY
-        TWITTER_APP_SECRET
+        TWITTER_KEY   # this is Token
+        TWITTER_SECRET # this is token_secret
+        TWITTER_APP_KEY #Consumer App key
+        TWITTER_APP_SECRET # consumer App secret
     Set the following key in private.py.
-        CONNECTION_STRING -- use sqlite:///tweets.db as a default if you need to. It's recommended to use postgresql, but not necessary.
+        CONNECTION_STRING -- use sqlite:///tweets.db as a default if you need to.
 
 Usage
 
-    python scrape.py to scrape. Use Ctrl + C to stop.
+    python scraper.py to scrape. Use Ctrl + C to stop.
     python dump.py to generate tweets.csv, which contains all the tweet data that was scraped.
     If you want to edit behavior, change settings in settings.py.
